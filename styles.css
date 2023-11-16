@@ -7,11 +7,6 @@ body {
     padding: 10px;
 }
 
-#event-display {
-    border: 1px solid #000;
-    padding: 20px;
-    margin-bottom: 20px;
-}
 
 button {
     margin: 10px;
@@ -53,4 +48,54 @@ button {
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+#event-display {
+    position: relative;
+    border: 1px solid #000;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center; /* Align text to the left */
+}
+
+#sub-event-display {
+    position: relative;
+    margin-bottom: 20px;
+    text-align: left; /* Align text to the left */
+}
+
+#event-header {
+    display: flex;
+    justify-content: center; /* Center the contents of the header */
+    position: relative; /* Allows absolute positioning relative to this container */
+}
+
+#event-title {
+    margin: 0;
+    /* Ensure the title is centered even with the number positioned absolutely */
+    flex: 1;
+    text-align: center;
+}
+
+#event-number {
+    font-size: 1.25rem;
+    position: absolute; /* Position the number absolutely within the header */
+    right: 20px; /* Position the number 20px from the left */
+    top: 0; /* Align the top of the number with the top of the container */
+}
+
+
+#flavor-text {
+    font-style: italic; /* Make flavor text italic */
+    quotes: "“" "”" "‘" "’";
+}
+#flavor-text:before {
+    content: open-quote;
+}
+#flavor-text:after {
+    content: close-quote;
+}
+
+strong {
+    font-weight: bold; /* Make certain text bold */
 }

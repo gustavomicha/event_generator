@@ -34,8 +34,8 @@ function loadEvents() {
                   title: cols[1],
                   flavorText: cols[2],
                   effect: cols[3],
-                  general: cols[4],
-                  outpost: cols[5],
+                  outpost: cols[4],
+                  general: cols[5],
                   resources: cols[6].trim() // Trim potential newline characters
               });
             }
@@ -50,9 +50,17 @@ function loadEvents() {
 // Function to display a random event
 function showNewEvent() {
     if (availableIndices.length === 0) {
-        document.getElementById('event-title').innerText = "No hay más cartas de Evento disponible, mezclar!";
+        // Clear all the event information fields
+        document.getElementById('event-title').innerText = "<No hay más cartas de Evento disponible, mezclar!>";
+        document.getElementById('event-number').innerText = '';
+        document.getElementById('flavor-text').innerText = '';
+        document.getElementById('effect-text').innerText = '';
+        document.getElementById('general-text').innerText = '';
+        document.getElementById('outpost-text').innerText = '';
+        document.getElementById('resources-text').innerText = '';
         return;
     }
+
     const randomIndex = Math.floor(Math.random() * availableIndices.length);
     const eventIndex = availableIndices[randomIndex];
     availableIndices.splice(randomIndex, 1); // Remove the selected index
@@ -62,10 +70,12 @@ function showNewEvent() {
     document.getElementById('event-title').innerText = event.title;
     document.getElementById('event-number').innerText = '#' + event.number;
     document.getElementById('flavor-text').innerText = event.flavorText;
-    document.getElementById('effect-text').innerText = `Efecto: ${event.effect}`;
-    document.getElementById('general-text').innerText = `General: ${event.general}`;
-    document.getElementById('outpost-text').innerText = `Puesto de Avanzada: ${event.outpost}`;
-    document.getElementById('resources-text').innerText = `Recursos: ${event.resources}`;
+    
+    // Update these to set the text content without the label
+    document.getElementById('effect-text').innerText = event.effect;
+    document.getElementById('general-text').innerText = event.general;
+    document.getElementById('outpost-text').innerText = event.outpost;
+    document.getElementById('resources-text').innerText = event.resources;
 }
 
 // Function to show history
@@ -81,7 +91,7 @@ function reset() {
     if (confirm("Mezclar maso de eventos?")) {
         history = [];
         availableIndices = [...Array(events.length).keys()];
-        document.getElementById('event-title').innerText = "Tomar Evento";
+        document.getElementById('event-title').innerText = "<Mostrar Evento para empezar>";
         document.getElementById('event-number').innerText = '';
         document.getElementById('flavor-text').innerText = '';
         document.getElementById('effect-text').innerText = '';

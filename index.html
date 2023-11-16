@@ -1,21 +1,24 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RPG Event Display</title>
+    <title>Event Display</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div id="event-display">
-        <h2 id="event-title">Tomar Evento</h2>
-        <p id="event-number"></p>
+        <div id="event-header">
+            <h2 id="event-title">Tomar Evento</h2>
+            <span id="event-number"></span>
+        </div>
         <p id="flavor-text"></p>
-        <p id="effect-text"></p>
-        <p id="general-text"></p>
-        <p id="outpost-text"></p>
-        <p id="resources-text"></p>
+        <p><strong>Efecto:</strong> <span id="effect-text"></span></p>
+        <div id="sub-event-display">
+            <p><strong>General:</strong> <span id="general-text"></span></p>
+            <p><strong>Puesto de Avanzada:</strong> <span id="outpost-text"></span></p>
+            <p><strong>Recursos:</strong> <span id="resources-text"></span></p>
+        </div>
     </div>
     <button id="new-event">Mostrar Evento</button>
     <button id="history">Historial</button>
