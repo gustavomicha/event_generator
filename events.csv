@@ -3,7 +3,7 @@ Numero,Titulo,Flavor Text,Efecto,Puesto de Avanzada,General,Recursos
 2,"Tambores de Batalla","La marcha del enemigo es cada vez más apresurada, será la cobardía lo que los impulsa?","Los Ejércitos Deambulantes Mueven +1","-","Instrucción 1","-"
 3,"Senderos Ocultos","Pobladores locales se acercan con información valiosa, esto podría cambiar la marcha del ejército, y de la guerra","Los Generales que pasen una tirada de Negociación (7) mueven +1 en el Llano",3,"Instrucción 1",(9;10)
 4,"Caminos Reparados","No todo es ruinas en este lado del mundo, estos caminos si bien antiguos son mejores que los de la capital","Generales Mueven +1 en Camino",5,"Instrucción 1","-"
-5,"Mercado Abierto","Mercaderes locales se acercan al Asentamiento, hay que aprovechar tan raro evento","Se pueden intercambiar 2[X] por [Y]",4,"Instrucción 1",(5;3)
+5,"Mercado Abierto","Mercaderes locales se acercan al Asentamiento, hay que aprovechar tan raro evento","Se puede intercambiar 2[C] del mismo tipo por 1[C] de otro",4,"Instrucción 1",(5;3)
 6,"Fuertes Vientos","Fuertes ventiscas vuelven a las flechas menos eficientes, y a las criaturas más lentas","Iniciativa Máxima es 1",1,"Instrucción 1","-"
 7,"Caminos Embarrados","Ha llovido demasiado durante la pasada noche, los caminos están embarrados y los carromatos pueden apenas desplazarse","Generales Mueven -1","-","Instrucción 2",(1;2)
 8,"Mañana Tranquila","El olor del rocío invade el llano, se respira calma entre los soldados. Será la calma que anticipa la tormenta?","No hay Efecto",4 & 1,"Instrucción 2","-"
@@ -18,4 +18,4 @@ Numero,Titulo,Flavor Text,Efecto,Puesto de Avanzada,General,Recursos
 17,"Niebla","Si no andamos con cuidado nos atacaremos los unos a los otros","Combate -1 (mínimo 1)",5,"Instrucción 3",(6;7)
 18,"Tundra","Las armas se atascan entre la maleza, pero al menos los troncos ofrecen cobertura","Armadura +1 (máximo 6)","-","Instrucción 3","-"
 19,"Comandante","Este joven muestra liderazgo, confiémosle un batallón y que lo guíe hasta el siguiente puesto","Se puede desplegar una unidad del Asentamiento en cualquier Locación Conquistada",4,"Especial 1",(3;6)
-20,"Tormenta Incesante","Dicen que siempre que toda tormenta finaliza, me pregunto si lo mismo sucederá en esta parte del mundo","Construir edificios sufre una penalización de +1[C] de coste",2,"Especial 2","-"
+20,"Tormenta Incesante","Dicen que en algún momento toda tormenta finaliza, me pregunto si lo mismo sucederá en esta parte del mundo","Construir edificios sufre una penalización de +1[C] de coste",2,"Especial 2","-"

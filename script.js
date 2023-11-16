@@ -23,7 +23,7 @@ function parseCSV(text) {
 
 // Function to fetch and parse the CSV data
 function loadEvents() {
-    fetch('/events.csv')
+    fetch('events.csv')
     .then(response => response.text())
     .then(text => {
         const rows = parseCSV(text).slice(1); // Remove header row and parse
@@ -51,7 +51,7 @@ function loadEvents() {
 function showNewEvent() {
     if (availableIndices.length === 0) {
         // Clear all the event information fields
-        document.getElementById('event-title').innerText = "<No hay más cartas de Evento disponible, mezclar!>";
+        document.getElementById('event-title').innerText = "<No hay más cartas de Evento disponibles. Mezclar!>";
         document.getElementById('event-number').innerText = '';
         document.getElementById('flavor-text').innerText = '';
         document.getElementById('effect-text').innerText = '';
@@ -91,7 +91,7 @@ function reset() {
     if (confirm("Mezclar maso de eventos?")) {
         history = [];
         availableIndices = [...Array(events.length).keys()];
-        document.getElementById('event-title').innerText = "<Mostrar Evento para empezar>";
+        document.getElementById('event-title').innerText = "<click en 'Mostrar Evento' para empezar>";
         document.getElementById('event-number').innerText = '';
         document.getElementById('flavor-text').innerText = '';
         document.getElementById('effect-text').innerText = '';
