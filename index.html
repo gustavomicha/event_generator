@@ -1,1 +1,34 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG Event Display</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="event-display">
+        <h2 id="event-title">Tomar Evento</h2>
+        <p id="event-number"></p>
+        <p id="flavor-text"></p>
+        <p id="effect-text"></p>
+        <p id="general-text"></p>
+        <p id="outpost-text"></p>
+        <p id="resources-text"></p>
+    </div>
+    <button id="new-event">Mostrar Evento</button>
+    <button id="history">Historial</button>
+    <button id="reset">Mezclar</button>
+
+    <div id="history-modal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Historial de Eventos.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
